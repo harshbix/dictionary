@@ -22,21 +22,33 @@ const DictionaryApp = () => {
   };
 
   return (
-    <div className="row justify-content-center m-3">
-    <div className="col-5">
-      <h1>Dictionary App</h1>
-      <input
-        type="text"
-        placeholder="Enter a word"
-        value={word}
-        onChange={(e) => setWord(e.target.value)}
-      />
-      <button onClick={handleSearch}>Search</button>
-      <div>
-        <h2>Meaning:</h2>
-        <p>{meaning}</p>
+    <div className="m-3  text-center">
+      <div className="">
+        <h1 className="display-3 fw-bolder text-center">Dictionary App</h1>
+
+        <div className="input-group mb-3">
+          <input
+            className="form-control border-2"
+            type="text"
+            placeholder="Enter a word"
+            value={word}
+            onChange={(e) => setWord(e.target.value)}
+          />
+          <div className="input-group-append">
+            <button
+              className="btn btn-primary"
+              type="button"
+              onClick={handleSearch}
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div>
+          <h2>Meaning:</h2>
+          <p>{word + " : " + meaning}</p>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

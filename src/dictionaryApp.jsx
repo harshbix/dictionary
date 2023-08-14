@@ -22,7 +22,8 @@ const DictionaryApp = () => {
   };
 
   return (
-    <div>
+    <div className="row justify-content-center m-3">
+    <div className="col-5">
       <h1>Dictionary App</h1>
       <input
         type="text"
@@ -35,6 +36,7 @@ const DictionaryApp = () => {
         <h2>Meaning:</h2>
         <p>{meaning}</p>
       </div>
+    </div>
     </div>
   );
 };

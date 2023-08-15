@@ -1,5 +1,5 @@
 import React from 'react';
-import DictionaryApp from './dictionaryApp';
+import DictionaryApp from './componets/dictionaryApp';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {

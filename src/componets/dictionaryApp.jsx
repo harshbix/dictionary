@@ -6,7 +6,7 @@ function MyNav() {
     <div>
       <nav className="navbar bg-body-tertiary">
         <div className="container">
-          <a className="navbar-brand">Navbar</a>
+          <a className="navbar-brand"><span icon="fa-solid fa-book" > </span></a>
           <form className="d-flex" role="dark-mode-toggle">
             <select className="form-select form-select-sm border-0">
               <option defaultValue>Serif</option>

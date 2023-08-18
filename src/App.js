@@ -1,11 +1,14 @@
 import React from 'react';
-import DictionaryApp from './componets/dictionaryApp';
+import MyNav from './componets/myNav';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import word from  './componets/word'
+import WordDisplay from './componets/word';
 
 function App() {
   return (
     <div className="App">
-      <DictionaryApp />
+      <MyNav />
+      <WordDisplay />
     </div>
   );
 }

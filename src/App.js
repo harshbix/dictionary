@@ -1,14 +1,16 @@
 import React from 'react';
 import MyNav from './componets/myNav';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import word from  './componets/word'
 import WordDisplay from './componets/word';
+import Definitions from './componets/definitions';
 
 function App() {
+  const word = 'keyboard';
   return (
     <div className="App">
       <MyNav />
       <WordDisplay />
+      <Definitions word={word}/>
     </div>
   );
 }

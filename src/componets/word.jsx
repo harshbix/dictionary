@@ -18,7 +18,7 @@ const WordDisplay = ({ searchResults }) => {
           </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p className='my-5'>Please Search any word</p>
       )}
     </div>
   );

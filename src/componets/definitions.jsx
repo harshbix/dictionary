@@ -36,7 +36,7 @@ const Definitions = ({ searchResults }) => {
           </div>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>..</p>
       )}
     </div>
   );

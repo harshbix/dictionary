@@ -27,12 +27,7 @@ function MyNav() {
           </form>
         </div>
       </nav>
-      <form className="search" action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search" className="rounded-3 rounded-end-0"/>
-        <button type="submit" className="rounded-3 rounded-start-0">
-          <i className="fa fa-search purple-color"></i>
-        </button>
-      </form>
+
     </div>
   );
 }

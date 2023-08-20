@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import words from './words.json'; // Assuming the JSON file is in the same directory
+import React, { useState, useEffect } from "react";
 
-const Definitions = () => {
+const Definitions = ({ searchResults }) => {
   const [wordData, setWordData] = useState(null);
 
   useEffect(() => {
-    // Assuming you have only one entry in the JSON array
-    if (words.length > 0) {
-      setWordData(words[0]);
+    if (searchResults && searchResults.length > 0) {
+      setWordData(searchResults[0]);
     }
-  }, []);
+  }, [searchResults]);
 
   return (
     <div>
@@ -28,6 +26,14 @@ const Definitions = () => {
               </ul>
             </div>
           ))}
+          <div>
+            <p className="my-3">
+              Source:{" "}
+              <a href={wordData.sourceUrls[0]} className="link">
+                {wordData.sourceUrls[0]}
+              </a>
+            </p>
+          </div>
         </div>
       ) : (
         <p>Loading...</p>

@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MyNav from './componets/myNav';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import WordDisplay from './componets/word';
 import Definitions from './componets/definitions';
+import SearchForm from './componets/fetchData';
+
+
 
 function App() {
-  const word = 'keyboard';
+  const [searchResults, setSearchResults] = useState(null);
+
+  const handleSearch = (results) => {
+    setSearchResults(results);
+  };
+
   return (
     <div className="App">
       <MyNav />
-      <WordDisplay />
-      <Definitions />
+      <SearchForm onSearch={handleSearch}/>
+      <WordDisplay searchResults={searchResults} />
+      <Definitions searchResults={searchResults} />
     </div>
   );
 }

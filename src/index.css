@@ -14,16 +14,7 @@ body {
   }
 
   /* Apply the modified styles for small screens */
-  .search input {
-    width: 100%;/* Make the input cover 100% of the width */
-    margin-right: 0; /* Remove right margin */
-  }
 
-  .search .fa-search {
-    position: absolute;
-    top: 10px;
-    left: 5px; /* Adjust left position for the icon */
-  }
 }
 .purple-color
 {

@@ -20,7 +20,10 @@ const Definitions = ({ searchResults }) => {
               <ul>
                 {meaning.definitions.map((definition, defIndex) => (
                   <li key={defIndex}>
-                    {definition.definition} (Example: {definition.example})
+                    {definition.definition}
+                    {definition.example && (
+                      <span> (Example: {definition.example})</span>
+                    )}
                   </li>
                 ))}
               </ul>

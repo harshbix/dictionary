@@ -30,27 +30,34 @@ body {
  color: #A944EF;
 }
 
-.search {
-  position: relative;
-  color: #aaa;
-  font-size: 16px;
-  display: inline-block;
-}
-
-.search input {
-  height: 35px;
-  background: #fcfcfc;
-  border:none;
-  border-radius: 5px;
-  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
-  text-indent: 32px;
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
   outline: none;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
 }
 
-.search .fa-search {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+/* form.search button:hover {
+  background: #0b7dda;
+} */
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #play

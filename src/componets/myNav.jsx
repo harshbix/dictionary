@@ -3,7 +3,7 @@ function MyNav() {
     <div className="py-3">
       <nav className="navbar">
         <div className="container">
-          <a  href="#" className="navbar-brand">
+          <a href="#" className="navbar-brand">
             <span className="fa fa-book"></span>
             <span className="fw-bold h6 text-decoration-none"> Dictionary</span>
           </a>
@@ -27,15 +27,14 @@ function MyNav() {
           </form>
         </div>
       </nav>
-      <div className="search mx-2">
-        <a href="#">
-          <span className="fa fa-search"></span>
-        </a>
-        <input placeholder="Search" className="p-3" />
-      </div>
+      <form className="search" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search" className="rounded-3 rounded-end-0"/>
+        <button type="submit" className="rounded-3 rounded-start-0">
+          <i className="fa fa-search purple-color"></i>
+        </button>
+      </form>
     </div>
   );
 }
-
 
 export default MyNav;

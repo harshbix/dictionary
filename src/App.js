@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <MyNav />
       <WordDisplay />
-      <Definitions word={word}/>
+      <Definitions />
     </div>
   );
 }

@@ -5,7 +5,7 @@ function MyNav() {
         <div className="container">
           <a href="#" className="navbar-brand">
             <span className="fa fa-book fs-1"></span>
-            <span className="fw-bold h6 text-decoration-none"> Dictionary</span>
+            {/* <span className="fw-bold h6 text-decoration-none"> Dictionary</span> */}
           </a>
           <form className="row align-items-center" role="dark-mode-toggle">
             <div className="col-auto">

@@ -22,7 +22,7 @@ function MyNav() {
                   type="checkbox"
                   id="flexSwitchCheckDefault"
                 />
-                <label className="form-check-label mx-2">🌙</label>
+                <label className="form-check-label mx-2">☀️</label>
               </div>
             </div>
           </form>

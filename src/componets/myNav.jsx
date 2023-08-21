@@ -4,7 +4,7 @@ function MyNav() {
       <nav className="navbar">
         <div className="container">
           <a href="#" className="navbar-brand">
-            <span className="fa fa-book"></span>
+            <span className="fa fa-book fs-1"></span>
             <span className="fw-bold h6 text-decoration-none"> Dictionary</span>
           </a>
           <form className="row align-items-center" role="dark-mode-toggle">
@@ -12,6 +12,7 @@ function MyNav() {
               <select className="form-select form-select-sm border-0">
                 <option defaultValue>Serif</option>
                 <option value="1">Sans-Serif</option>
+                <option value="2">Mono-space</option>
               </select>
             </div>
             <div className="col-auto">

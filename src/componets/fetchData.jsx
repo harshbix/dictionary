@@ -10,8 +10,8 @@ const SearchForm = ({ onSearch }) => {
             const response = await axios.get(apiEndpoint + searchTerm);
             onSearch(response.data);
         } catch (error) {
-            console.error("Error fetching data:", error);
-            throw error;
+            alert('unable to search! please try another word or check connectivity');
+            console.log(error)
         }
     };
 
@@ -20,6 +20,9 @@ const SearchForm = ({ onSearch }) => {
         if (searchTerm) {
             await fetchData(searchTerm);
         }
+        else(
+            alert('No word to search')
+        )
     };
 
     return (
